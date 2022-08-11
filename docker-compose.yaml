@@ -7,7 +7,5 @@ services:
       - "8080:8080"
   backend:
     image: backend:latest
-    ports:
-      - "9000:9000"
   database:
     image: redis
