@@ -34,6 +34,7 @@ func HealthzHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
+	fmt.Println("ting funker")
     http.HandleFunc("/healthz", HealthzHandler)
 
     http.HandleFunc("/api/random", func (w http.ResponseWriter, r *http.Request) {
